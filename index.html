@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -9,19 +8,15 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f3; color: #1a1a1a; min-height: 100vh; padding: 2rem 1rem 4rem; }
     .wrap { max-width: 580px; margin: 0 auto; }
-
     .intro-card { background: linear-gradient(135deg, #f0f7f0 0%, #e8f4e8 100%); border: 1px solid #c8e6c8; border-radius: 16px; padding: 1.25rem; margin-bottom: 1.25rem; }
     .intro-title { font-size: 16px; font-weight: 700; color: #2d6a2d; margin-bottom: 10px; }
     .intro-body { font-size: 13px; color: #3a3a3a; line-height: 1.85; }
     .intro-body em { color: #2d6a2d; font-style: normal; font-weight: 600; }
     .intro-divider { border: none; border-top: 1px solid #c8e6c8; margin: 12px 0; }
     .intro-deadline { margin-top: 12px; font-size: 12px; color: #2d6a2d; background: rgba(255,255,255,0.6); border-radius: 8px; padding: 7px 10px; line-height: 1.6; }
-
     .top-note { font-size: 13px; color: #888; margin-bottom: 1.25rem; padding: 10px 14px; background: #efefed; border-radius: 10px; border-left: 2px solid #ccc; line-height: 1.6; }
-
     .section-title { font-size: 13px; font-weight: 700; color: #2d6a2d; margin: 1.5rem 0 10px; padding-left: 8px; display: flex; align-items: center; gap: 6px; }
     .section-title::before { content: ''; display: inline-block; width: 3px; height: 14px; background: #2d6a2d; border-radius: 2px; }
-
     .q-card { background: #fff; border: 1px solid #e8e8e6; border-radius: 14px; padding: 1.25rem; margin-bottom: 12px; }
     .q-head { display: flex; align-items: baseline; gap: 8px; margin-bottom: 4px; flex-wrap: wrap; }
     .q-num { font-size: 11px; font-weight: 600; color: #aaa; background: #f5f5f3; padding: 2px 8px; border-radius: 20px; flex-shrink: 0; }
@@ -29,21 +24,17 @@
     .q-title { font-size: 15px; font-weight: 600; color: #1a1a1a; line-height: 1.5; }
     .q-hint { font-size: 12px; color: #aaa; margin: 4px 0 14px; line-height: 1.5; }
     .q-desc { font-size: 13px; color: #555; margin: 4px 0 14px; line-height: 1.6; background: #f9f9f8; padding: 8px 10px; border-radius: 8px; }
-
-    textarea { width: 100%; border: 1px solid #e8e8e6; border-radius: 10px; padding: 10px 12px; font-size: 14px; font-family: inherit; color: #1a1a1a; background: #fafaf9; resize: none; outline: none; line-height: 1.6; transition: border-color 0.15s; }
+    textarea { width: 100%; border: 1px solid #e8e8e6; border-radius: 10px; padding: 10px 12px; font-size: 14px; font-family: inherit; color: #1a1a1a; background: #fafaf9; resize: none; outline: none; line-height: 1.6; }
     textarea:focus { border-color: #aaa; background: #fff; }
     textarea::placeholder { color: #bbb; }
-
     .sub-label { font-size: 12px; font-weight: 600; color: #555; margin: 0 0 10px; }
     .sub-hint { font-size: 11px; color: #bbb; margin-left: 6px; font-weight: 400; }
-
     .chip-row { display: flex; flex-wrap: wrap; gap: 7px; }
     .chip { padding: 7px 14px; border: 1px solid #e8e8e6; border-radius: 20px; font-size: 13px; color: #666; background: #fff; cursor: pointer; transition: all 0.12s; font-family: inherit; }
     .chip:hover { border-color: #bbb; }
     .chip.on { background: #e8f0fe; color: #1a56db; border-color: #93b4fb; }
     .chip.green.on { background: #e8f4e8; color: #2d6a2d; border-color: #8bc88b; }
     .chip.pass.on { background: #f5f5f3; color: #aaa; border-color: #ddd; font-style: italic; }
-
     .emo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
     .emo-btn { border: 1px solid #e8e8e6; border-radius: 12px; padding: 12px 6px 10px; background: #fff; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 5px; transition: all 0.12s; font-family: inherit; }
     .emo-btn:hover { border-color: #bbb; }
@@ -54,22 +45,18 @@
     .emo-label { font-size: 12px; color: #666; }
     .emo-btn.pos.on .emo-label { color: #1a56db; }
     .emo-btn.neg.on .emo-label { color: #b45309; }
-
     .option-list { display: flex; flex-direction: column; gap: 8px; }
     .option-btn { border: 1px solid #e8e8e6; border-radius: 10px; padding: 12px 14px; font-size: 13px; color: #444; background: #fff; cursor: pointer; text-align: left; font-family: inherit; line-height: 1.5; transition: all 0.12s; }
     .option-btn:hover { border-color: #bbb; background: #fafaf9; }
     .option-btn.on { background: #e8f4e8; color: #2d6a2d; border-color: #8bc88b; }
     .option-num { font-weight: 600; margin-right: 6px; }
-
     .divider { border: none; border-top: 1px solid #f0f0ee; margin: 14px 0; }
-
     .anon-note { font-size: 12px; color: #888; text-align: center; margin: 12px 0 8px; line-height: 1.6; }
     .submit-btn { width: 100%; padding: 14px; border-radius: 12px; border: none; background: #2d6a2d; color: #fff; font-size: 15px; font-weight: 600; cursor: pointer; transition: opacity 0.12s; font-family: inherit; }
     .submit-btn:hover { opacity: 0.85; }
     .submit-btn:disabled { opacity: 0.4; cursor: default; }
     .sending-msg { font-size: 13px; color: #aaa; text-align: center; margin-top: 10px; display: none; }
     .thank-note { font-size: 13px; color: #888; text-align: center; margin-top: 10px; line-height: 1.7; }
-
     .done-box { display: none; border: 1px solid #c8e6c8; border-radius: 14px; padding: 1.5rem; margin-top: 12px; background: #f0f7f0; text-align: center; }
     .done-box.show { display: block; }
     .done-icon { font-size: 40px; margin-bottom: 10px; }
@@ -82,23 +69,14 @@
 
   <div class="intro-card">
     <div class="intro-title">🌱 함께 성장하는 기쁨을 누릴 수 있어서 참 즐거워요.</div>
-    <div class="intro-body">
-      이번 주제 <em>〈마음이 피어나는 정원〉</em> 수업은 주차별로 내 마음을 들여다 보고, 발견하고, 내가 좋아하고 행복한 지점을 찾아가고 있어요.
-    </div>
+    <div class="intro-body">이번 주제 <em>〈마음이 피어나는 정원〉</em> 수업은 주차별로 내 마음을 들여다 보고, 발견하고, 내가 좋아하고 행복한 지점을 찾아가고 있어요.</div>
     <div class="intro-divider"></div>
-    <div class="intro-body">
-      내 마음을 들여다 보고 발견하고 <em>컬러로 표현</em>하고, 모난 부분은 깎아 내고, 갈라진 부분은 덧붙이고 — 다양한 방식으로 시도해보고 있어요.<br><br>
-      특히 <em>내가 뭘 좋아하고, 어떤 컬러를 좋아하고, 내가 언제 행복한지</em>에 대해 함께 생각해보고 나누고 있습니다.
-    </div>
-    <div class="intro-deadline">
-      📅 수요일까지 생각해보고 답변주세요 :D<br>
-      자유롭게 아이디어·의견 주시면 다같이 만들어 가요!
-    </div>
+    <div class="intro-body">내 마음을 들여다 보고 발견하고 <em>컬러로 표현</em>하고, 모난 부분은 깎아 내고, 갈라진 부분은 덧붙이고 — 다양한 방식으로 시도해보고 있어요.<br><br>특히 <em>내가 뭘 좋아하고, 어떤 컬러를 좋아하고, 내가 언제 행복한지</em>에 대해 함께 생각해보고 나누고 있습니다.</div>
+    <div class="intro-deadline">📅 수요일까지 생각해보고 답변주세요 :D<br>자유롭게 아이디어·의견 주시면 다같이 만들어 가요!</div>
   </div>
 
   <div class="top-note">쓰고 싶은 것만, 쓰고 싶은 만큼. 비워도 충분해요.</div>
 
-  <!-- 수업 피드백 -->
   <div class="section-title">수업 피드백</div>
 
   <div class="q-card">
@@ -167,7 +145,6 @@
     <textarea id="q5" rows="3" placeholder="예) 그냥 또 와봐야겠다 / 잘 모르겠지만 괜찮았으면"></textarea>
   </div>
 
-  <!-- 전시회 -->
   <div class="section-title">전시회 의견</div>
 
   <div class="q-card">
@@ -197,7 +174,6 @@
   <div class="q-card">
     <div class="q-head"><span class="q-num">8</span><span class="q-tag">전시회</span><span class="q-title">공동작업을 위해 서로를 알려주세요</span></div>
     <div class="q-hint">편하게 답해주세요 — 더 좋은 함께를 만들기 위한 질문이에요.</div>
-
     <div class="sub-label">① 이런 상황이 힘들어요 <span class="sub-hint">해당하는 것 모두 체크</span></div>
     <div class="chip-row" id="hard-chips" style="margin-bottom:18px;">
       <button class="chip" onclick="tog(this)">작업물이 비교될 때</button>
@@ -206,26 +182,20 @@
       <button class="chip" onclick="tog(this)">분위기가 불편할 때</button>
       <button class="chip" onclick="tog(this)">내 의견이 무시당하는 것 같을 때</button>
     </div>
-
     <div class="divider"></div>
-
     <div class="sub-label">② 작업할 때 이런 편이에요 <span class="sub-hint">하나 선택</span></div>
     <div class="option-list" id="work-style" style="margin-bottom:18px;">
       <button class="option-btn" onclick="selOption(this,'work-style')"><span class="option-num">·</span>방향이 정해져 있는 게 좋다</button>
       <button class="option-btn" onclick="selOption(this,'work-style')"><span class="option-num">·</span>자유롭게 알아서 하는 게 좋다</button>
       <button class="option-btn" onclick="selOption(this,'work-style')"><span class="option-num">·</span>둘 다 상관없다</button>
     </div>
-
     <div class="divider"></div>
-
     <div class="sub-label">③ 협업할 때 이게 있으면 좋아요 <span class="sub-hint">하나 선택</span></div>
     <div class="option-list" id="collab-style" style="margin-bottom:18px;">
       <button class="option-btn" onclick="selOption(this,'collab-style')"><span class="option-num">·</span>역할이 명확하게 나뉘어 있으면 좋다</button>
       <button class="option-btn" onclick="selOption(this,'collab-style')"><span class="option-num">·</span>중간중간 같이 이야기하면서 맞춰가는 게 좋다</button>
     </div>
-
     <div class="divider"></div>
-
     <div class="sub-label">④ 자유롭게 한 마디</div>
     <textarea id="q8-free" rows="3" placeholder="무엇이든 편하게 써주세요."></textarea>
   </div>
@@ -240,12 +210,10 @@
     <div class="done-msg">소중한 의견 고마워요!</div>
     <p class="done-note">수요일까지 모아서 함께 준비할게요.<br>다음 수업 때 봐요 :D</p>
   </div>
-
 </div>
 
 <script>
-  // ✏️ Google Apps Script 배포 URL을 여기에 붙여넣으세요
-  const SCRIPT_URL = 'YOUR_SCRIPT_URL_HERE';
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyZDwyifKLTODa2OTQQRtXla7A0Qi5_Vx98VktVwEZT7di_FECe1oHZDqIjNRHL-vg/exec';
 
   function tog(el) { el.classList.toggle('on'); }
 
